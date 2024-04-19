@@ -1,0 +1,468 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat" sans-serif;
+}
+
+body {
+  color: #444;
+  font-family: sans-serif;
+  border-top: 10px solid blue;
+}
+.main-header,
+.footer {
+  width: 100%;
+}
+
+.main-header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #171f40;
+  padding: 20px 40px;
+  width: auto;
+}
+
+nav {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.nav-items {
+  padding-top: 10px;
+}
+
+.nav-items a {
+  margin: 50px;
+  text-decoration: none;
+  color: white;
+}
+
+.search-icon material-symbols-outlined {
+  padding-top: 10px;
+}
+
+.banner {
+  display: flex;
+  padding-left: 120px;
+}
+
+.banner-image {
+  width: 400px;
+  height: auto;
+  position: relative;
+  margin-left: 30px;
+  border-left: 300px;
+}
+
+.banner-image h2 {
+  position: absolute;
+  top: 200px;
+}
+
+.banner-text {
+  padding-top: 90px;
+  margin-left: 100px;
+  width: 600px;
+  font-size: 40px;
+}
+
+.banner-text p {
+  padding-left: 10px;
+  padding-top: 20px;
+  font-size: 22px;
+}
+
+.banner-buttons {
+  text-decoration: none;
+  padding-left: 80px;
+  color: black;
+}
+
+.banner-buttons #browse,
+.banner-buttons .add_book {
+  color: white;
+  background-color: #171f40;
+}
+
+.banner-buttons a {
+  color: white;
+}
+
+.new_releases {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+}
+
+.new_releases h2 {
+  width: 100%;
+  color: #333;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.new_releases ul {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-decoration: none;
+}
+
+.new_releases li {
+  background-color: white;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  font-size: 18px;
+  color: #171f40;
+  flex: 1 1 300px;
+  text-decoration: none;
+  max-width: 400px;
+}
+
+.new_releases li:last-child {
+  margin-bottom: 0;
+}
+
+.new_releases h2 {
+  background-color: #171f40;
+  color: white;
+  font-size: 50px;
+  font-weight: 500px;
+  padding: 20px;
+}
+
+.addBook {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.nameBook {
+  position: relative;
+  font-size: 20px;
+  padding-top: 20px;
+  margin-bottom: 5px;
+}
+
+.nameBook input {
+  border: none;
+  appearance: none;
+  background: #f2f2f2;
+  padding: 12px;
+  border-radius: 3px;
+  width: 250px;
+  outline: none;
+  font-size: 14px;
+}
+
+.nameBook .placeholder {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  color: #aaa;
+  font-size: 14px;
+  transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+  padding-left: 50px;
+}
+
+.nameBook input:valid + .placeholder,
+.nameBook input:focus + .placeholder {
+  top: 10px;
+  font-size: 10px;
+  color: #aaa;
+}
+
+.nameBook.two .placeholder {
+  position: absolute;
+  left: 48%;
+  top: 65%;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 14px;
+  transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+
+.nameBook.two {
+  background: none;
+  transition: border-color 0.3s ease;
+}
+
+.nameBook.two input:valid,
+.nameBook.two input:focus {
+  border-color: #222;
+  transition-delay: 0.1s;
+}
+
+.addbookLabels {
+  display: flex;
+  flex-direction: column;
+}
+
+.new_releases {
+  list-style: none;
+}
+
+.release_items {
+  list-style: none;
+}
+
+.book-listing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  background-color: #f2e8d0;
+}
+.book-listing-container h1 {
+  font-size: 30px;
+  text-align: center;
+  padding: 50px;
+  background-color: #edd5ad;
+  color: #3d5066;
+}
+.book-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: calc(33.333% - 20px);
+  margin: 10px;
+}
+
+.book-cover {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.book-info {
+  padding: 15px;
+  flex: 1;
+}
+
+.book-info h2,
+.book-info p {
+  margin: 5px 0;
+}
+
+.newsfeed {
+  display: flex;
+  background-color: #171f40;
+  padding: 40px;
+  color: white;
+  flex-direction: column;
+}
+.newsfeed h3 input {
+  padding: 10px;
+}
+
+.newsletter input {
+  padding: 10px;
+  padding-top: 10px;
+}
+
+.subscribe-news {
+  padding-top: 20px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content img {
+  max-width: 100%;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+}
+
+.main-header .review_section {
+  display: flex;
+}
+
+.nameBook {
+  display: flex;
+}
+.review_section {
+  padding: 300px;
+}
+
+.imageDescription {
+  padding: 40px;
+  margin: 30px;
+  margin-right: 30px;
+  background-color: #3d5066;
+  color: #f0e0bb;
+  line-height: 2;
+}
+.imageDescription p {
+  padding-top: 50px;
+}
+.profileImage img {
+  width: 500px;
+}
+.bannerDescript {
+  display: flex;
+}
+.hobbies {
+  background: #3d5066;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.hobbies h2 {
+  color: #edd5ad;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.hobbies ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.hobbies li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 18px;
+  color: #edd5ad;
+}
+
+.hobbies li:last-child {
+  border-bottom: none;
+}
+
+.aboutMes {
+  display: flex;
+  justify-content: space-between;
+}
+.education {
+  background: #edd5ad;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  color: #3d5066;
+}
+
+#foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  background-color: #171f40;
+  color: white;
+}
+
+.addReview {
+  width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 250px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+.viewReview {
+  margin-top: 185px;
+  padding-bottom: 468px;
+  margin-left: 350px;
+}
+.logo a {
+  text-decoration: none;
+  color: white;
+}

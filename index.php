@@ -21,7 +21,7 @@
               <a href="booksListing.php" onclick="search-db">Books</a>
               <ul class="dropdown">
                 <li><a href="#">Book Listing</a></li>
-                <li><a href="#">Book Reviews</a></li>
+                <li><a href="./bookReview.php">Book Reviews</a></li>
                 <li><a href="#">Book Ratings</a></li>
               </ul>
             </li>
@@ -32,7 +32,9 @@
 
     <section>
       <div class="welcome_section">
-        <h1>Welcome to Algernon's Library</h1>
+        <div class="welcometalk">
+          
+        <h2>Welcome to Algernon's Library</h2>
         <p>Search through our catalog of IT related books to help you become a better Programmer!</p>
         <form class=form_search action="./books.php" method="post">
           <div class="search">
@@ -40,7 +42,17 @@
           <input type="search" name="search-db" class="search-input" placeholder="Search for books">
 
         </form>
+
+        </div>
+
+        <div class="placeholder">
+          <img src="./images//Bibliophile-rafiki.svg" alt="">
+        </div>
       </div>
     </section>
+    <footer class="footer">
+      <h1>copyrigh</h1>
+      
+    </footer>
   </body>
 </html>

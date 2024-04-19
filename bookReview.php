@@ -32,9 +32,7 @@
 
     <section>
       <div class="welcome_section">
-        <div class="welcometalk">
-          
-        <h2>Welcome to Algernon's Library</h2>
+        <h1>Welcome to Algernon's Library</h1>
         <p>Search through our catalog of IT related books to help you become a better Programmer!</p>
         <form class=form_search action="./books.php" method="post">
           <div class="search">
@@ -42,17 +40,7 @@
           <input type="search" name="search-db" class="search-input" placeholder="Search for books">
 
         </form>
-
-        </div>
-
-        <div class="placeholder">
-          <img src="./images//Bibliophile-rafiki.svg" alt="">
-        </div>
       </div>
     </section>
-    <footer class="footer">
-      <h1>copyrigh</h1>
-      
-    </footer>
   </body>
 </html>

@@ -1,2 +1,4 @@
 <?php
-$dbc = mysqli_connect('localhost', 'root', '', 'db_22104695') OR die (mysqli_connect_error());
+$dbc = mysqli_connect('localhost', 'root', '', 'bookreview') OR die (mysqli_connect_error());
+
+?>

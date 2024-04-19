@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap");
+* {
+  font-family: "Montserrat" sans-serif;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  background-color: #171f40;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  padding-top: 5px;
+}
+.search_book {
+  display: flex;
+  justify-content: space-between;
+}
+#logo h2,
+#logo a {
+  color: white;
+  font-size: 20px;
+  padding-left: 25px;
+  padding-top: 10px;
+  text-decoration: none;
+}
+.nav_links {
+  display: flex;
+  list-style: none;
+  color: white;
+}
+
+.nav_links li {
+  padding: 0 20px;
+  padding-top: 10px;
+  text-decoration: none;
+}
+.nav_links li a {
+  text-decoration: none;
+  color: white;
+}
+
+.form_search {
+  text-align: center;
+}
+.nav_links li a:hover {
+  color: lightslategray;
+}
+.nav_links ul.dropdown {
+  width: 300px;
+  position: absolute;
+  right: 0;
+  max-width: 100%;
+  overflow: hidden;
+  z-index: 999;
+  display: none;
+  flex-direction: column;
+  background-color: #171f40;
+}
+.nav_links li:hover .dropdown {
+  display: flex;
+}
+
+#banner {
+  width: 100%;
+  height: 70vh;
+  background-image: url(herolibrary.jpg);
+  background-size: cover;
+  border-radius: 10px;
+  color: cornsilk;
+  padding-top: 200px;
+  text-align: center;
+}
+
+#banner h2 {
+  font-size: 50px;
+  font-weight: bolder;
+  padding-bottom: 50px;
+}
+#banner p {
+  font-size: 30px;
+}
+
+.queryTable {
+  padding-top: 50px;
+}
+
+#banner #browse {
+  text-decoration: none;
+}
+
+.new_releases {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap onto the next line */
+  justify-content: center; /* Centers items horizontally */
+  align-items: flex-start; /* Aligns items to the top of the container */
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+}
+
+.new_releases h2 {
+  width: 100%; /* Makes the header take full width */
+  color: #333;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.new_releases ul {
+  width: 100%; /* Takes full width to align with the header */
+  padding: 0;
+  display: flex; /* Applies Flexbox to the list itself */
+  flex-wrap: wrap; /* Allows list items to wrap */
+  justify-content: space-around; /* Distributes space around items */
+  text-decoration: none;
+}
+
+.new_releases li {
+  background-color: white;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  font-size: 18px;
+  color: #171f40;
+  flex: 1 1 300px; /* Allows items to grow and shrink with a basis of 300px */
+  text-decoration: none;
+}
+
+.new_releases li:last-child {
+  margin-bottom: 0;
+}
+
+table {
+  padding-top: 50px;
+}
+
+form {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.addBook {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Add this line */
+  height: 30vh; /* Add this line to make it take full height */
+}
+input {
+  border-radius: 3px;
+  background: #f2f2f2;
+}
+
+.nameBook {
+  position: relative;
+  font-size: 20px;
+  padding-top: 20px;
+  margin-bottom: 5px;
+}
+
+.nameBook input {
+  border: none;
+  appearance: none;
+  background: #f2f2f2;
+  padding: 12px;
+  border-radius: 3px;
+  width: 250px;
+  outline: none;
+  font-size: 14px;
+}
+.nameBook .placeholder {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  color: #aaa;
+  font-size: 14px;
+  transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+.nameBook input:valid + .placeholder,
+.nameBook input:focus + .placeholder {
+  top: 10px;
+  font-size: 10px;
+  color: #aaa;
+}
+
+/* for the first name search bar */
+.nameBook.two .placeholder {
+  position: absolute;
+  left: 48%; /* Adjust the left value as needed */
+  top: 65%;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 14px;
+  transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+
+.nameBook.two {
+  background: none;
+  transition: border-color 0.3s ease;
+}
+
+.nameBook.two input:valid,
+.nameBook.two input:focus {
+  border-color: #222;
+  transition-delay: 0.1s;
+}
+
+.review_section {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Add this line */
+  height: 30vh; /* Add this line to make it take full height */
+}
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  right: 28px;
+  width: 280px;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.btn {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+.btn:hover .btn-slide-show-text1 {
+  margin-left: 65px;
+}
+.btn-fill-center {
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all 0.5s ease-in 0s;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 50px;
+}

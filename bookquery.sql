@@ -4,7 +4,7 @@ $dbc = mysqli_connect('localhost', 'root', '', 'bookreview') OR die (mysqli_conn
 // Sanitize user input
 $search = mysqli_real_escape_string($dbc, $_POST["search-db"]);
 
-$query = "SELECT b.bookId, b.title, b.copyRight, a.authorId, CONCAT(a.firstName, ' ', a.lastName) AS authorName
+$query = "SELECT b.bookId, b.title, b.copyRight AS Copyright, a.authorId, CONCAT(a.firstName, ' ', a.lastName) AS authorName
 FROM Book b
 JOIN Authorship ash ON b.bookId = ash.bookId
 JOIN Author a ON ash.authorId = a.authorId
@@ -40,7 +40,7 @@ while ($row = mysqli_fetch_assoc($result)) {
     echo "<td>" . $row['title'] . "</td>";
     echo "<td>" . $row['bookId'] . "</td>";
     echo "<td>" . $row['authorName'] . "</td>";
-    echo "<td>" . $row['copyRight'] . "</td>";
+    echo "<td>" . $row['Copyright'] . "</td>";
     // Output more columns if needed
     echo "</tr>";
 }
